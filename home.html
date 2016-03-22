@@ -13,7 +13,13 @@
 </div>
 <br />
 <br />
-<p ng-style="{color:dyncolor}" ng-click="myStyle={color:'red'}">This paragraph must change the color if you click on this!</p>
+<p ng-style="myStyle" ng-click="myStyle={color:'red'}">This paragraph must change the color if you click on this!</p>
+<br />
+<br />
+<button ng-click="addName()">Add Name</button>
+<div>
+    <span ng-model="myName">{{myName}}</span>
+</div>
 <br />
 <br />
 <div>

@@ -27,6 +27,11 @@ controllers.controller('HomePageController', ['$scope', '$rootScope', '$http', f
     $scope.changeColor = function(value) {
 
     };
+    
+     $scope.addName = function() {
+         $scope.myName = 'Edu';
+    }
+
 
     $scope.showFriends = function() {
         $scope.friends = [
