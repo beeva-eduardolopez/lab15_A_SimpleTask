@@ -25,11 +25,12 @@ controllers.controller('HomePageController', ['$scope', '$rootScope', '$http', f
     };
 
     $scope.changeColor = function(value) {
-
+        var colorP = Math.floor(Math.random() * 40);
+        $scope.colorP = $scope.Colors[colorP];
     };
-    
-     $scope.addName = function() {
-         $scope.myName = 'Edu';
+
+    $scope.addName = function() {
+        $scope.myName = 'Edu';
     }
 
 
