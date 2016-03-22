@@ -9,9 +9,16 @@
 <input class="btn btn-primary" type="button" value="Show value" ng-click="executeFunction(myText)" />
 <br />
 <br />
-<div style="height:100px;width:275px; background-color:{{color}};" 
-ng-mouseover='onMouseover()'ng-mouseleave='onMouseLeave()'> </div>
+<div style="height:100px;width:275px; background-color:{{color}};" ng-mouseover='onMouseover()' ng-mouseleave='onMouseLeave()'>
+</div>
 <br />
 <br />
-<p ng-style="myStyle" ng-click="myStyle={color:'red'}">This paragraph must change the color if you click on this!</p>
-
+<p ng-style="{color:dyncolor}" ng-click="myStyle={color:'red'}">This paragraph must change the color if you click on this!</p>
+<br />
+<br />
+<div>
+    <button ng-click="showFriends()">Show Friends</button>
+    <div ng-repeat="friend in friends">
+        <h3>{{friend.name}}</h3>
+    </div>
+</div>

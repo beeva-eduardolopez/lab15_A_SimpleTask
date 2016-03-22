@@ -23,17 +23,46 @@ controllers.controller('HomePageController', ['$scope', '$rootScope', '$http', f
     $scope.onMouseLeave = function() {
         $scope.color = 'tomato';
     };
-    
+
     $scope.changeColor = function(value) {
-        
-        
-        // $scope.Colors = ["aqua", "azure", "beige", "tan", "blue", "brown", "cyan",
-        //     "darkblue", " darkcyan", " darkgrey", "darkgreen",
-        //     " darkkhaki", " darkmagenta", "darkolivegreen", "darkorange", "darkorchid", "darkred", " darksalmon", " darkviolet", " gold", " green", "indigo", " khaki", " lightblue", "lightcyan", "lightgreen", " lightgrey", " lightpink", "lightyellow", "lime", "magenta", "maroon", " navy", " olive", " orange", " pink", "purple", " violet", " red ", " silver", "yellow "];
-        // var color = Math.floor(Math.random() * 40);
-        // return { "color": color };
 
     };
+
+    $scope.showFriends = function() {
+        $scope.friends = [
+            {
+                name: 'Javier'
+            },
+            {
+                name: 'Ignacio'
+            },
+            {
+                name: 'Jose Carlos'
+            },
+            {
+                name: 'Jesus'
+            },
+            {
+                name: 'Ismael'
+            },
+            {
+                name: 'Alfonso'
+            },
+            {
+                name: 'Alvaro'
+            },
+            {
+                name: 'Alicia'
+            },
+            {
+                name: 'Cesar'
+            },
+            {
+                name: 'Amador'
+            }
+        ]
+
+    }
 
 
 
